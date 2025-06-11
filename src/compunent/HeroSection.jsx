@@ -56,7 +56,7 @@ const HeroSection = () => {
         <div className="md:w-1/2 text-center md:text-left space-y-6">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-cyan-700 leading-tight">
             Clean Water, Healthier Life <br />
-            <span className="text-cyan-500">Aqua Services in Pune</span>
+            <span className="text-cyan-500">Aqua Services in Pune !</span>
           </h1>
           <p className="text-gray-600 text-lg">
             We provide RO purifier sales, installation & maintenance across Pune.
