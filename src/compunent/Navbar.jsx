@@ -62,10 +62,10 @@ const Navbar = () => {
 
             {/* Nav Links */}
             <ul className="space-y-6 text-xl font-semibold text-gray-700 text-center">
-              <li><a href="#" className="hover:text-cyan-500 transition">Home</a></li>
-              <li><a href="#" className="hover:text-cyan-500 transition">Services</a></li>
-              <li><a href="#" className="hover:text-cyan-500 transition">About</a></li>
-              <li><a href="#" className="hover:text-cyan-500 transition">Contact</a></li>
+              <li><a href="" className="hover:text-cyan-500 transition" id="" onClick={() => setIsOpen(false)}>Home</a></li>
+              <li><a href="#services" className="hover:text-cyan-500 transition" id="" onClick={() => setIsOpen(false)}>Services</a></li>
+              <li><a href="#Testimonial" className="hover:text-cyan-500 transition" id="" onClick={() => setIsOpen(false)}>Testimonial</a></li>
+              <li><a href="#Contact" className="hover:text-cyan-500 transition" id="" onClick={() => setIsOpen(false)}>Contact</a></li>
             </ul>
           </div>
         </div>
