@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { FaCommentAlt,  FaPhoneAlt, FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -32,29 +32,27 @@ const Footer = () => {
 
     {/* Right Content */}
     <div className="flex flex-col md:items-end gap-4">
-      <div className="flex gap-4">
-        <a
-          href="https://wa.me/919604795870"
-          target="_blank"
-          className="text-white hover:text-cyan-300 transition"
-        >
-          <i className="fab fa-whatsapp text-xl"></i>
-        </a>
-        <a
-          href="tel:+919604795870"
-          className="text-white hover:text-cyan-300 transition"
-        >
-          <i className="fas fa-phone-alt text-xl"></i>
-        </a>
-        <a
-          href="sms:+919604795870"
-          className="text-white hover:text-cyan-300 transition"
-        >
-          <i className="fas fa-comment-alt text-xl"></i>
-        </a>
-        
-        
-      </div>
+<div className="flex gap-4">
+  <a
+    href="https://wa.me/919604795870"
+    target="_blank"
+    className="text-white hover:text-cyan-300 transition"
+  >
+    <FaWhatsapp className="text-xl" />
+  </a>
+  <a
+    href="tel:+919604795870"
+    className="text-white hover:text-cyan-300 transition"
+  >
+<FaPhoneAlt className="text-xl" />  </a>
+  <a
+    href="sms:+919604795870"
+    className="text-white hover:text-cyan-300 transition"
+  >
+     <FaCommentAlt className="text-xl" />
+  </a>
+</div>
+
       <p className="text-xs text-cyan-200">
         © 2025 AquaCare Services. All rights reserved.
       </p>
