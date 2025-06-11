@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 const aquaImages = [
-  '/Aqua.webp',
-  '/Aquaa.webp',
-  '/aquaguard.webp',
-  '/Eureka.jpg',
+  '/aquaservices/Aqua.webp',
+  '/aquaservices/Aquaa.webp',
+  '/aquaservices/aquaguard.webp',
+  '/aquaservices/Eureka.jpg',
 ];
 const prices = ['₹8,999', '₹10,499', '₹12,999', '₹7,899'];
 
