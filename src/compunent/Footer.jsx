@@ -34,19 +34,19 @@ const Footer = () => {
     <div className="flex flex-col md:items-end gap-4">
 <div className="flex gap-4">
   <a
-    href="https://wa.me/919604795870"
+    href="https://wa.me/918237760208"
     target="_blank"
     className="text-white hover:text-cyan-300 transition"
   >
     <FaWhatsapp className="text-xl" />
   </a>
   <a
-    href="tel:+919604795870"
+    href="tel:+918237760208"
     className="text-white hover:text-cyan-300 transition"
   >
 <FaPhoneAlt className="text-xl" />  </a>
   <a
-    href="sms:+919604795870"
+    href="sms:+918237760208"
     className="text-white hover:text-cyan-300 transition"
   >
      <FaCommentAlt className="text-xl" />

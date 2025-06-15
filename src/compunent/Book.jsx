@@ -4,6 +4,8 @@ import toast from 'react-hot-toast';
 
 
 const ContactForm = () => {
+      const [loading, setLoading] = useState(false);
+
       const [formData, setFormData] = useState({
             fullName: '',
             phone: '',
@@ -17,14 +19,14 @@ const ContactForm = () => {
 
       const handleSubmit = (e) => {
             e.preventDefault();
-
+            setLoading(true);
             if (
                   formData.fullName.trim() === '' ||
                   formData.phone.length !== 10 ||
                   !formData.email.includes('@') ||
                   formData.message.trim() === ''
             ) {
-                  alert('Please fill all fields correctly.');
+                  toast.error('Please fill all fields correctly.');
                   return;
             }
 
@@ -48,7 +50,9 @@ const ContactForm = () => {
                   });
             }).catch((error) => {
                   console.error('Error:', error);
-                  alert('Something went wrong. Please try again.');
+                  toast.error('Something went wrong. Please try again.');
+            }).finally(() => {
+                  setLoading(false);
             });
       };
 
@@ -88,11 +92,18 @@ const ContactForm = () => {
                               onChange={handleChange}
                               className="w-full border px-4 py-2 rounded h-24"
                         />
-                        <button
+                        <button disabled={loading}
                               type="submit"
                               className="w-full bg-cyan-600 hover:bg-cyan-700 text-white py-2 rounded"
                         >
-                              Submit
+                              {loading ? (
+                                    <>
+                                          Submitting...
+                                          <span className="ml-2 w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+                                    </>
+                              ) : (
+                                    'Submit'
+                              )}
                         </button>
                   </form>
             </div>
