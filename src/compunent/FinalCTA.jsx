@@ -15,7 +15,7 @@ const FinalCTA = () => {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
           <a
-            href="https://wa.me/919604795870"
+            href="https://wa.me/918237760208"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white text-cyan-700 hover:bg-cyan-100 font-semibold flex items-center gap-2 px-6 py-3 rounded-full transition"
@@ -23,13 +23,13 @@ const FinalCTA = () => {
             <FaWhatsapp className="text-xl" /> WhatsApp Us
           </a>
           <a
-            href="tel:+919604795870"
+            href="tel:+918237760208"
             className="bg-white text-cyan-700 hover:bg-cyan-100 font-semibold flex items-center gap-2 px-6 py-3 rounded-full transition"
           >
             <FaPhoneAlt className="text-xl" /> Call Now
           </a>
           <a
-            href="sms:+919604795870"
+            href="sms:+918237760208"
             className="bg-white text-cyan-700 hover:bg-cyan-100 font-semibold flex items-center gap-2 px-6 py-3 rounded-full transition"
           >
             <FaCommentDots className="text-xl" /> Message

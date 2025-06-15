@@ -1,119 +1,250 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-const aquaImages = [
-  '/Aqua.webp',
-  '/Aquaa.webp',
-  '/aquaguard.webp',
-  '/Eureka.jpg',
+
+const products = [
+  {
+    name: "AQUA FRESH",
+    image: "/aquaservices/aquaAt.jpg",
+    features: [
+      "RO + UV + TDS + Mineral Filter",
+      "Wall-mountable design",
+      "Energy-efficient",
+      "Suitable for borewell & tanker"
+    ],
+    oldPrice: "₹20,000",
+    newPrice: "₹9,999",
+    warranty: "1 Year"
+  },
+  {
+    name: "GRAND STAR",
+    image: "/aquaservices/AquaAth.jpeg",
+    features: [
+      "RO+UV+TDS Controller+Mineral Water filter",
+      "2 Year Warranty",
+      "12 L/hr Capacity",
+      "Unbreakable body",
+      "Alkaline water"
+    ],
+    oldPrice: "₹18,000",
+    newPrice: "₹12,000",
+    warranty: "2 Years"
+  },
+  {
+    name: "AQUA PRO",
+    image: "/aquaservices/Aquaa.webp",
+    features: [
+      "RO + UF + UV + Mineral Guard",
+      "Smart Auto Shut Off",
+      "Energy-saving mode",
+      "12 Litre Storage"
+    ],
+    oldPrice: "₹19,000",
+    newPrice: "₹12,999",
+    warranty: "1 Year"
+  },
+    {
+    name: "AQUA FRESH",
+    image: "/aquaservices/aquaAt.jpg",
+    features: [
+      "RO + UV + TDS + Mineral Filter",
+      "Wall-mountable design",
+      "Energy-efficient",
+      "Suitable for borewell & tanker"
+    ],
+    oldPrice: "₹20,000",
+    newPrice: "₹9,999",
+    warranty: "1 Year"
+  },
+  {
+    name: "GRAND STAR",
+    image: "/aquaservices/AquaAth.jpeg",
+    features: [
+      "RO+UV+TDS Controller+Mineral Water filter",
+      "2 Year Warranty",
+      "12 L/hr Capacity",
+      "Unbreakable body",
+      "Alkaline water"
+    ],
+    oldPrice: "₹18,000",
+    newPrice: "₹12,000",
+    warranty: "2 Years"
+  },
+  {
+    name: "AQUA PRO",
+    image: "/aquaservices/Aquaa.webp",
+    features: [
+      "RO + UF + UV + Mineral Guard",
+      "Smart Auto Shut Off",
+      "Energy-saving mode",
+      "12 Litre Storage"
+    ],
+    oldPrice: "₹19,000",
+    newPrice: "₹12,999",
+    warranty: "1 Year"
+  },
+    {
+    name: "AQUA FRESH",
+    image: "/aquaservices/aquaAt.jpg",
+    features: [
+      "RO + UV + TDS + Mineral Filter",
+      "Wall-mountable design",
+      "Energy-efficient",
+      "Suitable for borewell & tanker"
+    ],
+    oldPrice: "₹20,000",
+    newPrice: "₹9,999",
+    warranty: "1 Year"
+  },
+  {
+    name: "GRAND STAR",
+    image: "/aquaservices/AquaAth.jpeg",
+    features: [
+      "RO+UV+TDS Controller+Mineral Water filter",
+      "2 Year Warranty",
+      "12 L/hr Capacity",
+      "Unbreakable body",
+      "Alkaline water"
+    ],
+    oldPrice: "₹18,000",
+    newPrice: "₹12,000",
+    warranty: "2 Years"
+  },
+  {
+    name: "AQUA PRO",
+    image: "/aquaservices/Aquaa.webp",
+    features: [
+      "RO + UF + UV + Mineral Guard",
+      "Smart Auto Shut Off",
+      "Energy-saving mode",
+      "12 Litre Storage"
+    ],
+    oldPrice: "₹19,000",
+    newPrice: "₹12,999",
+    warranty: "1 Year"
+  },
+    {
+    name: "AQUA FRESH",
+    image: "/aquaservices/aquaAt.jpg",
+    features: [
+      "RO + UV + TDS + Mineral Filter",
+      "Wall-mountable design",
+      "Energy-efficient",
+      "Suitable for borewell & tanker"
+    ],
+    oldPrice: "₹20,000",
+    newPrice: "₹9,999",
+    warranty: "1 Year"
+  },
+  {
+    name: "GRAND STAR",
+    image: "/aquaservices/AquaAth.jpeg",
+    features: [
+      "RO+UV+TDS Controller+Mineral Water filter",
+      "2 Year Warranty",
+      "12 L/hr Capacity",
+      "Unbreakable body",
+      "Alkaline water"
+    ],
+    oldPrice: "₹18,000",
+    newPrice: "₹12,000",
+    warranty: "2 Years"
+  },
+  {
+    name: "AQUA PRO",
+    image: "/aquaservices/Aquaa.webp",
+    features: [
+      "RO + UF + UV + Mineral Guard",
+      "Smart Auto Shut Off",
+      "Energy-saving mode",
+      "12 Litre Storage"
+    ],
+    oldPrice: "₹19,000",
+    newPrice: "₹12,999",
+    warranty: "1 Year"
+  }
 ];
-const prices = ['₹8,999', '₹10,499', '₹12,999', '₹7,899'];
 
 const HeroSection = () => {
   const [index, setIndex] = useState(0);
   const sliderRef = useRef(null);
 
-  const extendedImages = [...aquaImages, aquaImages[0]];
-  const totalSlides = aquaImages.length;
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => prev + 1);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
+  const goToSlide = (newIndex) => {
     const slider = sliderRef.current;
     if (!slider) return;
+    const total = products.length;
+    const validIndex = (newIndex + total) % total;
+    setIndex(validIndex);
+    slider.scrollTo({
+      left: validIndex * slider.offsetWidth,
+      behavior: 'smooth'
+    });
+  };
 
-    const slideTo = (i, smooth = true) => {
-      slider.scrollTo({
-        left: i * slider.offsetWidth,
-        behavior: smooth ? 'smooth' : 'auto',
-      });
-    };
-
-    if (index < totalSlides) {
-      slideTo(index);
-    }
-
-    if (index === totalSlides) {
-      slideTo(index, true);
-      setTimeout(() => {
-        slideTo(0, false);
-        setIndex(1);
-      }, 500);
-    }
-  }, [index, totalSlides]);
+  // Auto Slide
+  useEffect(() => {
+    const interval = setInterval(() => {
+      goToSlide(index + 1);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [index]);
 
   return (
-    <section
-      data-aos="fade-up"
-      className="bg-gradient-to-b from-cyan-50 to-white py-12 md:py-20 overflow-hidden"
-    >
-      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10">
-        {/* Text Section */}
-        <div className="md:w-1/2 text-center md:text-left space-y-6">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-cyan-700 leading-tight">
-            Clean Water, Healthier Life <br />
-            <span className="text-cyan-500">Aqua Services in Pune !</span>
-          </h1>
-          <p className="text-gray-600 text-lg">
-            We provide RO purifier sales, installation & maintenance across Pune.
-            Fast, affordable & trusted by 1000+ happy customers.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
-            <Link to="/book">
-              <button className="bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-3 rounded-full text-sm font-semibold transition">
-                Book Now
-              </button>
-            </Link>
-            <a
-              href="tel:+919999999999"
-              className="text-cyan-600 font-semibold border border-cyan-600 px-6 py-3 rounded-full text-sm hover:bg-cyan-50 transition"
-            >
-              Call Us
-            </a>
-          </div>
-        </div>
+    <section className="bg-gradient-to-b from-cyan-50 to-white py-12 md:py-20 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 relative">
 
-        {/* Image Carousel */}
-        <div className="md:w-1/2 w-full relative overflow-hidden">
-          <div
-            ref={sliderRef}
-            className="flex overflow-hidden rounded-xl shadow-lg h-72 md:h-96 w-full scroll-smooth"
-          >
-            {extendedImages.map((img, idx) => (
-              <div
-                key={idx}
-                className="w-full flex-shrink-0 h-full flex items-center justify-center"
-              >
-                <div className="relative w-full h-full">
-                  <img
-                    src={img}
-                    alt={`Aqua ${idx + 1}`}
-                    className="w-full h-full object-contain"
-                  />
+        {/* Slider Container */}
+        <div className="relative overflow-hidden">
+          <div ref={sliderRef} className="flex transition-all duration-500 scroll-smooth w-full overflow-hidden">
+            {products.map((product, i) => (
+              <div key={i} className="min-w-full flex justify-center px-4">
+                <div className="bg-white rounded-xl shadow-md p-6 flex flex-col md:flex-row items-center gap-8 max-w-4xl w-full">
+                  {/* Image */}
+                  <div className="w-full md:w-1/2 flex justify-center">
+                    <img src={product.image} alt={product.name} className="w-64 h-64 object-contain" />
+                  </div>
 
-                  {/* Price Tag Overlay */}
-                  {idx < prices.length && (
-                    <div
-                      className={`
-                        absolute bottom-0 w-full text-white text-center py-2
-                        bg-black/40 transition-all duration-700 ease-in-out
-                        ${idx === index ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full'}
-                      `}
-                    >
-                      <p className="text-sm md:text-base transition-opacity duration-700">
-                        <span className="line-through mr-2 text-red-300">₹20,000</span>
-                        <span className="font-semibold text-green-300">Now {prices[idx]}</span>
-                      </p>
+                  {/* Content */}
+                  <div className="w-full md:w-1/2 text-center md:text-left space-y-4">
+                    <h2 className="text-2xl font-bold text-cyan-700">{product.name}</h2>
+                    <ul className="text-gray-600 text-sm list-disc list-inside">
+                      {product.features.map((feat, idx) => (
+                        <li key={idx}>{feat}</li>
+                      ))}
+                    </ul>
+                    <div className="text-lg">
+                      <span className="line-through text-red-400 mr-2">{product.oldPrice}</span>
+                      <span className="text-green-600 font-bold">{product.newPrice}</span>
                     </div>
-                  )}
+                    <p className="text-sm text-gray-500">Warranty: {product.warranty}</p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                      <Link to="/book">
+                        <button className="bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded-full text-sm font-semibold">
+                          Book Now
+                        </button>
+                      </Link>
+                      <a href="tel:+918237760208" className="text-cyan-600 font-semibold border border-cyan-600 px-6 py-2 rounded-full text-sm hover:bg-cyan-50">
+                        Call Us
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
+
+          {/* Arrows */}
+          <button
+            onClick={() => goToSlide(index - 1)}
+            className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white shadow p-2 rounded-full hover:bg-cyan-100 z-10"
+          >
+            ◀
+          </button>
+          <button
+            onClick={() => goToSlide(index + 1)}
+            className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white shadow p-2 rounded-full hover:bg-cyan-100 z-10"
+          >
+            ▶
+          </button>
         </div>
       </div>
     </section>
