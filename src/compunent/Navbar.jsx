@@ -31,16 +31,16 @@ const Navbar = () => {
         {/* Desktop Links */}
         <ul className="hidden md:flex space-x-6 font-medium text-gray-700">
           <li>
-            <HashLink smooth to="#home" className="hover:text-cyan-500 transition">Home</HashLink>
+            <HashLink smooth to="/#home" className="hover:text-cyan-500 transition">Home</HashLink>
           </li>
           <li>
-            <HashLink smooth to="#services" className="hover:text-cyan-500 transition">Services</HashLink>
+            <HashLink smooth to="/#services" className="hover:text-cyan-500 transition">Services</HashLink>
           </li>
           <li>
-            <HashLink smooth to="#Testimonial" className="hover:text-cyan-500 transition">Testimonial</HashLink>
+            <HashLink smooth to="/#Testimonial" className="hover:text-cyan-500 transition">Testimonial</HashLink>
           </li>
           <li>
-            <HashLink smooth to="#Contact" className="hover:text-cyan-500 transition">Contact</HashLink>
+            <HashLink smooth to="/#Contact" className="hover:text-cyan-500 transition">Contact</HashLink>
           </li>
         </ul>
 
@@ -72,10 +72,10 @@ const Navbar = () => {
 
             {/* Nav Links */}
             <ul className="space-y-6 text-xl font-semibold text-gray-700 text-center">
-              <li><HashLink smooth to="#home" className="hover:text-cyan-500 transition" id="" onClick={() => setIsOpen(false)}>Home</HashLink></li>
-              <li><HashLink smooth to="#services" className="hover:text-cyan-500 transition" id="" onClick={() => setIsOpen(false)}>Services</HashLink></li>
-              <li><HashLink smooth to="#Testimonial" className="hover:text-cyan-500 transition" id="" onClick={() => setIsOpen(false)}>Testimonial</HashLink></li>
-              <li><HashLink smooth to="#Contact" className="hover:text-cyan-500 transition" id="" onClick={() => setIsOpen(false)}>Contact</HashLink></li>
+              <li><HashLink smooth to="/#home" className="hover:text-cyan-500 transition" id="" onClick={() => setIsOpen(false)}>Home</HashLink></li>
+              <li><HashLink smooth to="/#services" className="hover:text-cyan-500 transition" id="" onClick={() => setIsOpen(false)}>Services</HashLink></li>
+              <li><HashLink smooth to="/#Testimonial" className="hover:text-cyan-500 transition" id="" onClick={() => setIsOpen(false)}>Testimonial</HashLink></li>
+              <li><HashLink smooth to="/#Contact" className="hover:text-cyan-500 transition" id="" onClick={() => setIsOpen(false)}>Contact</HashLink></li>
             </ul>
           </div>
         </div>

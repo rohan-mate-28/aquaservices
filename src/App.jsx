@@ -38,7 +38,7 @@ function App() {
             </>
           }
         />
-        <Route path="/book" element={<Book />} />
+        <Route path="/book/:id" element={<Book />} />
       </Routes>
     </BrowserRouter>
   );
