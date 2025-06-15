@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { HashLink } from 'react-router-hash-link';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -30,11 +30,21 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <ul className="hidden md:flex space-x-6 font-medium text-gray-700">
-          <li><a href="" className="hover:text-cyan-500 transition" id="">Home</a></li>
-          <li><a href="#services" className="hover:text-cyan-500 transition" id="">Services</a></li>
-          <li><a href="#Testimonial" className="hover:text-cyan-500 transition" id="">Testimonial</a></li>
-          <li><a href="#Contact" className="hover:text-cyan-500 transition" id="">Contact</a></li>
+          <li>
+            <HashLink smooth to="#home" className="hover:text-cyan-500 transition">Home</HashLink>
+          </li>
+          <li>
+            <HashLink smooth to="#services" className="hover:text-cyan-500 transition">Services</HashLink>
+          </li>
+          <li>
+            <HashLink smooth to="#Testimonial" className="hover:text-cyan-500 transition">Testimonial</HashLink>
+          </li>
+          <li>
+            <HashLink smooth to="#Contact" className="hover:text-cyan-500 transition">Contact</HashLink>
+          </li>
         </ul>
+
+
       </nav>
 
       {/* Fullscreen Mobile Menu */}
@@ -62,10 +72,10 @@ const Navbar = () => {
 
             {/* Nav Links */}
             <ul className="space-y-6 text-xl font-semibold text-gray-700 text-center">
-              <li><a href="" className="hover:text-cyan-500 transition" id="" onClick={() => setIsOpen(false)}>Home</a></li>
-              <li><a href="#services" className="hover:text-cyan-500 transition" id="" onClick={() => setIsOpen(false)}>Services</a></li>
-              <li><a href="#Testimonial" className="hover:text-cyan-500 transition" id="" onClick={() => setIsOpen(false)}>Testimonial</a></li>
-              <li><a href="#Contact" className="hover:text-cyan-500 transition" id="" onClick={() => setIsOpen(false)}>Contact</a></li>
+              <li><HashLink smooth to="#home" className="hover:text-cyan-500 transition" id="" onClick={() => setIsOpen(false)}>Home</HashLink></li>
+              <li><HashLink smooth to="#services" className="hover:text-cyan-500 transition" id="" onClick={() => setIsOpen(false)}>Services</HashLink></li>
+              <li><HashLink smooth to="#Testimonial" className="hover:text-cyan-500 transition" id="" onClick={() => setIsOpen(false)}>Testimonial</HashLink></li>
+              <li><HashLink smooth to="#Contact" className="hover:text-cyan-500 transition" id="" onClick={() => setIsOpen(false)}>Contact</HashLink></li>
             </ul>
           </div>
         </div>

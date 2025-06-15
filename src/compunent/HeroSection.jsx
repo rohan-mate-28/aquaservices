@@ -189,7 +189,7 @@ const HeroSection = () => {
   }, [index]);
 
   return (
-    <section className="bg-gradient-to-b from-cyan-50 to-white py-12 md:py-20 overflow-hidden">
+    <section id="home" className="bg-gradient-to-b from-cyan-50 to-white py-12 md:py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 relative">
         <div className="text-center max-w-3xl mx-auto mb-10">
           <h1 className="text-3xl md:text-4xl font-bold text-cyan-800 leading-tight mb-4">
