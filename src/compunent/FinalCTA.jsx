@@ -3,7 +3,7 @@ import { FaWhatsapp, FaPhoneAlt, FaCommentDots } from 'react-icons/fa';
 
 const FinalCTA = () => {
   return (
-    <section id='Contact' className="bg-cyan-600 py-12 text-white" py-12 pb-0 text-center data-aos="fade-up">
+    <section id='Contact' className="bg-cyan-600 py-12 text-white"   data-aos="fade-up">
  
       <div className="max-w-4xl mx-auto px-6 text-center space-y-6">
         <h2 className="text-3xl md:text-4xl font-bold">

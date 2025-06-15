@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';  
 
-const products = [
+ const products = [
   {
+    id: "aqua-fresh",
     name: "AQUA FRESH",
     image: "/aquaservices/aquaAt.jpg",
     features: [
@@ -16,6 +18,7 @@ const products = [
     warranty: "1 Year"
   },
   {
+    id: "grand-star",
     name: "GRAND STAR",
     image: "/aquaservices/AquaAth.jpeg",
     features: [
@@ -30,6 +33,7 @@ const products = [
     warranty: "2 Years"
   },
   {
+    id: "aqua-pro",
     name: "AQUA PRO",
     image: "/aquaservices/Aquaa.webp",
     features: [
@@ -43,6 +47,7 @@ const products = [
     warranty: "1 Year"
   },
   {
+    id: "aqua-fresh",
     name: "AQUA FRESH",
     image: "/aquaservices/aquaAt.jpg",
     features: [
@@ -56,6 +61,7 @@ const products = [
     warranty: "1 Year"
   },
   {
+    id: "grand-star",
     name: "GRAND STAR",
     image: "/aquaservices/AquaAth.jpeg",
     features: [
@@ -70,6 +76,7 @@ const products = [
     warranty: "2 Years"
   },
   {
+    id: "aqua-pro",
     name: "AQUA PRO",
     image: "/aquaservices/Aquaa.webp",
     features: [
@@ -83,6 +90,7 @@ const products = [
     warranty: "1 Year"
   },
   {
+    id: "aqua-fresh",
     name: "AQUA FRESH",
     image: "/aquaservices/aquaAt.jpg",
     features: [
@@ -96,6 +104,7 @@ const products = [
     warranty: "1 Year"
   },
   {
+    id: "grand-star",
     name: "GRAND STAR",
     image: "/aquaservices/AquaAth.jpeg",
     features: [
@@ -110,6 +119,7 @@ const products = [
     warranty: "2 Years"
   },
   {
+    id: "aqua-pro",
     name: "AQUA PRO",
     image: "/aquaservices/Aquaa.webp",
     features: [
@@ -123,6 +133,7 @@ const products = [
     warranty: "1 Year"
   },
   {
+    id: "aqua-fresh",
     name: "AQUA FRESH",
     image: "/aquaservices/aquaAt.jpg",
     features: [
@@ -136,6 +147,7 @@ const products = [
     warranty: "1 Year"
   },
   {
+    id: "grand-star",
     name: "GRAND STAR",
     image: "/aquaservices/AquaAth.jpeg",
     features: [
@@ -150,6 +162,7 @@ const products = [
     warranty: "2 Years"
   },
   {
+    id: "aqua-pro",
     name: "AQUA PRO",
     image: "/aquaservices/Aquaa.webp",
     features: [
@@ -163,8 +176,12 @@ const products = [
     warranty: "1 Year"
   }
 ];
-
+ 
 const HeroSection = () => {
+  const navigate = useNavigate(); // ✅ Call inside the component
+const handleBookNow = (product) => {
+  navigate(`/book/${product.id}`, { state: { product } });
+};
   const [index, setIndex] = useState(0);
   const sliderRef = useRef(null);
 
@@ -225,11 +242,12 @@ const HeroSection = () => {
                     </div>
                     <p className="text-sm text-gray-500">Warranty: {product.warranty}</p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                      <Link to="/book">
-                        <button className="bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded-full text-sm font-semibold">
-                          Book Now
-                        </button>
-                      </Link>
+                      <button
+                        onClick={() => handleBookNow(product)}
+                        className="bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded-full text-sm font-semibold"
+                      >
+                        Book Now
+                      </button>
                       <a href="tel:+918237760208" className="text-cyan-600 font-semibold border border-cyan-600 px-6 py-2 rounded-full text-sm hover:bg-cyan-50">
                         Call Us
                       </a>
