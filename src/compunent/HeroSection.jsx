@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 const aquaImages = [
-  '/aquaservices/Aqua.webp',
-  '/aquaservices/Aquaa.webp',
-  '/aquaservices/aquaguard.webp',
-  '/aquaservices/Eureka.jpg',
+  '/Aqua.webp',
+  '/Aquaa.webp',
+  '/aquaguard.webp',
+  '/Eureka.jpg',
 ];
 const prices = ['₹8,999', '₹10,499', '₹12,999', '₹7,899'];
 
@@ -62,9 +63,11 @@ const HeroSection = () => {
             Fast, affordable & trusted by 1000+ happy customers.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
-            <button className="bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-3 rounded-full text-sm font-semibold transition">
-              Book Now
-            </button>
+            <Link to="/book">
+              <button className="bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-3 rounded-full text-sm font-semibold transition">
+                Book Now
+              </button>
+            </Link>
             <a
               href="tel:+919999999999"
               className="text-cyan-600 font-semibold border border-cyan-600 px-6 py-3 rounded-full text-sm hover:bg-cyan-50 transition"
