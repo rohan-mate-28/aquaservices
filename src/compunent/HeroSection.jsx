@@ -1,36 +1,34 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';  
+import { useNavigate } from 'react-router-dom';
 
- const products = [
+const products = [
   {
-    id: "aqua-fresh",
-    name: "AQUA FRESH",
-    image: "/aquaservices/aquaAt.jpg",
+    id: "royal-plues",
+    name: " ROYAL Plues ",
+    image: "/aquaservices/royal.jpeg",
     features: [
-      "RO + UV + TDS + Mineral Filter",
+      "RO + UV + TDS Controller+ Mineral Filter",
       "Wall-mountable design",
       "Energy-efficient",
       "Suitable for borewell & tanker"
     ],
-    oldPrice: "₹20,000",
-    newPrice: "₹9,999",
+    oldPrice: "8,999",
+    newPrice: "₹7,999",
     warranty: "1 Year"
   },
   {
-    id: "grand-star",
-    name: "GRAND STAR",
+    id: "aqua-natural",
+    name: "AQUA NATURAL",
     image: "/aquaservices/AquaAth.jpeg",
     features: [
-      "RO+UV+TDS Controller+Mineral Water filter",
-      "2 Year Warranty",
       "12 L/hr Capacity",
       "Unbreakable body",
       "Alkaline water"
     ],
-    oldPrice: "₹18,000",
-    newPrice: "₹12,000",
-    warranty: "2 Years"
+    oldPrice: "₹8,000",
+    newPrice: "₹5,999",
+    warranty: "0"
   },
   {
     id: "aqua-pro",
@@ -47,33 +45,31 @@ import { useNavigate } from 'react-router-dom';
     warranty: "1 Year"
   },
   {
-    id: "aqua-fresh",
-    name: "AQUA FRESH",
-    image: "/aquaservices/aquaAt.jpg",
+    id: "royal-plues",
+    name: " ROYAL Plues ",
+    image: "/aquaservices/royal.jpeg",
     features: [
-      "RO + UV + TDS + Mineral Filter",
+      "RO + UV + TDS Controller+ Mineral Filter",
       "Wall-mountable design",
       "Energy-efficient",
       "Suitable for borewell & tanker"
     ],
-    oldPrice: "₹20,000",
-    newPrice: "₹9,999",
+    oldPrice: "8,999",
+    newPrice: "₹7,999",
     warranty: "1 Year"
   },
   {
-    id: "grand-star",
-    name: "GRAND STAR",
+    id: "aqua-natural",
+    name: "AQUA NATURAL",
     image: "/aquaservices/AquaAth.jpeg",
     features: [
-      "RO+UV+TDS Controller+Mineral Water filter",
-      "2 Year Warranty",
       "12 L/hr Capacity",
       "Unbreakable body",
       "Alkaline water"
     ],
-    oldPrice: "₹18,000",
-    newPrice: "₹12,000",
-    warranty: "2 Years"
+    oldPrice: "₹8,000",
+    newPrice: "₹5,999",
+    warranty: "0"
   },
   {
     id: "aqua-pro",
@@ -90,33 +86,31 @@ import { useNavigate } from 'react-router-dom';
     warranty: "1 Year"
   },
   {
-    id: "aqua-fresh",
-    name: "AQUA FRESH",
-    image: "/aquaservices/aquaAt.jpg",
+    id: "royal-plues",
+    name: " ROYAL Plues ",
+    image: "/aquaservices/royal.jpeg",
     features: [
-      "RO + UV + TDS + Mineral Filter",
+      "RO + UV + TDS Controller+ Mineral Filter",
       "Wall-mountable design",
       "Energy-efficient",
       "Suitable for borewell & tanker"
     ],
-    oldPrice: "₹20,000",
-    newPrice: "₹9,999",
+    oldPrice: "8,999",
+    newPrice: "₹7,999",
     warranty: "1 Year"
   },
   {
-    id: "grand-star",
-    name: "GRAND STAR",
+    id: "aqua-natural",
+    name: "AQUA NATURAL",
     image: "/aquaservices/AquaAth.jpeg",
     features: [
-      "RO+UV+TDS Controller+Mineral Water filter",
-      "2 Year Warranty",
       "12 L/hr Capacity",
       "Unbreakable body",
       "Alkaline water"
     ],
-    oldPrice: "₹18,000",
-    newPrice: "₹12,000",
-    warranty: "2 Years"
+    oldPrice: "₹8,000",
+    newPrice: "₹5,999",
+    warranty: "0"
   },
   {
     id: "aqua-pro",
@@ -133,33 +127,31 @@ import { useNavigate } from 'react-router-dom';
     warranty: "1 Year"
   },
   {
-    id: "aqua-fresh",
-    name: "AQUA FRESH",
-    image: "/aquaservices/aquaAt.jpg",
+    id: "royal-plues",
+    name: " ROYAL Plues ",
+    image: "/aquaservices/royal.jpeg",
     features: [
-      "RO + UV + TDS + Mineral Filter",
+      "RO + UV + TDS Controller+ Mineral Filter",
       "Wall-mountable design",
       "Energy-efficient",
       "Suitable for borewell & tanker"
     ],
-    oldPrice: "₹20,000",
-    newPrice: "₹9,999",
+    oldPrice: "8,999",
+    newPrice: "₹7,999",
     warranty: "1 Year"
   },
   {
-    id: "grand-star",
-    name: "GRAND STAR",
+    id: "aqua-natural",
+    name: "AQUA NATURAL",
     image: "/aquaservices/AquaAth.jpeg",
     features: [
-      "RO+UV+TDS Controller+Mineral Water filter",
-      "2 Year Warranty",
       "12 L/hr Capacity",
       "Unbreakable body",
       "Alkaline water"
     ],
-    oldPrice: "₹18,000",
-    newPrice: "₹12,000",
-    warranty: "2 Years"
+    oldPrice: "₹8,000",
+    newPrice: "₹5,999",
+    warranty: "0"
   },
   {
     id: "aqua-pro",
@@ -176,12 +168,12 @@ import { useNavigate } from 'react-router-dom';
     warranty: "1 Year"
   }
 ];
- 
+
 const HeroSection = () => {
   const navigate = useNavigate(); // ✅ Call inside the component
-const handleBookNow = (product) => {
-  navigate(`/book/${product.id}`, { state: { product } });
-};
+  const handleBookNow = (product) => {
+    navigate(`/book/${product.id}`, { state: { product } });
+  };
   const [index, setIndex] = useState(0);
   const sliderRef = useRef(null);
 
@@ -201,7 +193,7 @@ const handleBookNow = (product) => {
   useEffect(() => {
     const interval = setInterval(() => {
       goToSlide(index + 1);
-    }, 4000);
+    }, 6000);
     return () => clearInterval(interval);
   }, [index]);
 
@@ -239,8 +231,14 @@ const handleBookNow = (product) => {
                     <div className="text-lg">
                       <span className="line-through text-red-400 mr-2">{product.oldPrice}</span>
                       <span className="text-green-600 font-bold">{product.newPrice}</span>
-                    </div>
-                    <p className="text-sm text-gray-500">Warranty: {product.warranty}</p>
+                    </div>{
+                      product.warranty == "0"? (
+                        <p className="text-sm text-gray-500"> </p>
+                      ) : (
+                        <p className="text-sm text-gray-500">Warranty: {product.warranty}</p>
+
+                      )
+                    }
                     <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                       <button
                         onClick={() => handleBookNow(product)}

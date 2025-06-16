@@ -2,14 +2,13 @@ import React, { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:py-4">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <svg className="w-8 h-8 text-cyan-500" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 2C7 12 12 22 12 22s5-10 0-20z" />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#06b6d4">
+            <path d="M12 2C8 7 6 11 6 14a6 6 0 0012 0c0-3-2-7-6-12z" />
           </svg>
           <span className="font-bold text-lg text-cyan-600">Aqua Services</span>
         </div>
