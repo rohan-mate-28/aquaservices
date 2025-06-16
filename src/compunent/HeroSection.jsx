@@ -9,12 +9,13 @@ const products = [
     image: "/aquaservices/royal.jpeg",
     features: [
       "RO + UV + TDS Controller+ Mineral Filter",
+      "16 Litter Capacity",
       "Wall-mountable design",
       "Energy-efficient",
       "Suitable for borewell & tanker"
     ],
-    oldPrice: "8,999",
-    newPrice: "₹7,999",
+    oldPrice: "9,599",
+    newPrice: "₹8,399",
     warranty: "1 Year"
   },
   {
@@ -22,151 +23,45 @@ const products = [
     name: "AQUA NATURAL",
     image: "/aquaservices/AquaAth.jpeg",
     features: [
-      "12 L/hr Capacity",
+      "16 Litter Capacity",
       "Unbreakable body",
       "Alkaline water"
     ],
-    oldPrice: "₹8,000",
-    newPrice: "₹5,999",
+    oldPrice: "₹6,499",
+    newPrice: "₹5,499",
     warranty: "0"
   },
   {
-    id: "aqua-pro",
-    name: "AQUA PRO",
-    image: "/aquaservices/Aquaa.webp",
+    id: "purosis",
+    name: "PUROSIS",
+    image: "/aquaservices/purosis.jpeg",
     features: [
-      "RO + UF + UV + Mineral Guard",
-      "Smart Auto Shut Off",
-      "Energy-saving mode",
-      "12 Litre Storage"
-    ],
-    oldPrice: "₹19,000",
-    newPrice: "₹12,999",
-    warranty: "1 Year"
-  },
-  {
-    id: "royal-plues",
-    name: " ROYAL Plues ",
-    image: "/aquaservices/royal.jpeg",
-    features: [
-      "RO + UV + TDS Controller+ Mineral Filter",
+      "RO + UV + TDS Controller + Mineral Filter + Alkaline",
       "Wall-mountable design",
       "Energy-efficient",
+      "16 Litre Storage",
       "Suitable for borewell & tanker"
     ],
-    oldPrice: "8,999",
-    newPrice: "₹7,999",
-    warranty: "1 Year"
+    oldPrice: "₹13,999",
+    newPrice: "11,999",
+    warranty: "2 Year"
   },
   {
-    id: "aqua-natural",
-    name: "AQUA NATURAL",
-    image: "/aquaservices/AquaAth.jpeg",
+    id: "under-sink",
+    name: "UNDER SINK WATER PURIFIER",
+    image: "/aquaservices/Under-sink.jpeg",
     features: [
-      "12 L/hr Capacity",
-      "Unbreakable body",
-      "Alkaline water"
-    ],
-    oldPrice: "₹8,000",
-    newPrice: "₹5,999",
-    warranty: "0"
-  },
-  {
-    id: "aqua-pro",
-    name: "AQUA PRO",
-    image: "/aquaservices/Aquaa.webp",
-    features: [
-      "RO + UF + UV + Mineral Guard",
-      "Smart Auto Shut Off",
-      "Energy-saving mode",
-      "12 Litre Storage"
-    ],
-    oldPrice: "₹19,000",
-    newPrice: "₹12,999",
-    warranty: "1 Year"
-  },
-  {
-    id: "royal-plues",
-    name: " ROYAL Plues ",
-    image: "/aquaservices/royal.jpeg",
-    features: [
-      "RO + UV + TDS Controller+ Mineral Filter",
+      "RO + UV + TDS Controller + Mineral Filter + Alkaline",
       "Wall-mountable design",
       "Energy-efficient",
+      "12 Litre Storage",
       "Suitable for borewell & tanker"
     ],
-    oldPrice: "8,999",
-    newPrice: "₹7,999",
-    warranty: "1 Year"
-  },
-  {
-    id: "aqua-natural",
-    name: "AQUA NATURAL",
-    image: "/aquaservices/AquaAth.jpeg",
-    features: [
-      "12 L/hr Capacity",
-      "Unbreakable body",
-      "Alkaline water"
-    ],
-    oldPrice: "₹8,000",
-    newPrice: "₹5,999",
-    warranty: "0"
-  },
-  {
-    id: "aqua-pro",
-    name: "AQUA PRO",
-    image: "/aquaservices/Aquaa.webp",
-    features: [
-      "RO + UF + UV + Mineral Guard",
-      "Smart Auto Shut Off",
-      "Energy-saving mode",
-      "12 Litre Storage"
-    ],
-    oldPrice: "₹19,000",
-    newPrice: "₹12,999",
-    warranty: "1 Year"
-  },
-  {
-    id: "royal-plues",
-    name: " ROYAL Plues ",
-    image: "/aquaservices/royal.jpeg",
-    features: [
-      "RO + UV + TDS Controller+ Mineral Filter",
-      "Wall-mountable design",
-      "Energy-efficient",
-      "Suitable for borewell & tanker"
-    ],
-    oldPrice: "8,999",
-    newPrice: "₹7,999",
-    warranty: "1 Year"
-  },
-  {
-    id: "aqua-natural",
-    name: "AQUA NATURAL",
-    image: "/aquaservices/AquaAth.jpeg",
-    features: [
-      "12 L/hr Capacity",
-      "Unbreakable body",
-      "Alkaline water"
-    ],
-    oldPrice: "₹8,000",
-    newPrice: "₹5,999",
-    warranty: "0"
-  },
-  {
-    id: "aqua-pro",
-    name: "AQUA PRO",
-    image: "/aquaservices/Aquaa.webp",
-    features: [
-      "RO + UF + UV + Mineral Guard",
-      "Smart Auto Shut Off",
-      "Energy-saving mode",
-      "12 Litre Storage"
-    ],
-    oldPrice: "₹19,000",
-    newPrice: "₹12,999",
+    oldPrice: "₹23,999",
+    newPrice: "21,999",
     warranty: "1 Year"
   }
+   
 ];
 
 const HeroSection = () => {
@@ -193,7 +88,7 @@ const HeroSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       goToSlide(index + 1);
-    }, 6000);
+    }, 12000);
     return () => clearInterval(interval);
   }, [index]);
 
