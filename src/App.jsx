@@ -9,7 +9,7 @@ import TestimonialsSection from './compunent/TestimonialsSection';
 import FAQSection from './compunent/FAQSection';
 import FinalCTA from './compunent/FinalCTA';
 import Footer from './compunent/Footer';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Book from './compunent/Book';
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter basename="/aquaservices">
+    <HashRouter>
       <Navbar />
       <Routes>
         <Route
@@ -40,7 +40,7 @@ function App() {
         />
         <Route path="/book/:id" element={<Book />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
