@@ -62,22 +62,38 @@ const Book = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start animate-fade-in">
 
                               {/* Left: Product Info */}
-                              <div className="bg-gray-50 p-6 rounded-xl shadow-md text-center">
+                              <div className="bg-gray-50 p-6 rounded-xl shadow-md text-center space-y-4">
+                                    {/* Image */}
                                     <img
                                           src={product.image}
                                           alt={product.name}
-                                          className="mx-auto h-48 w-auto object-contain mb-4"
+                                          className="mx-auto h-44 w-auto object-contain"
                                     />
+
+                                    {/* Name */}
                                     <h2 className="text-2xl font-extrabold text-cyan-700 uppercase tracking-wide">
                                           {product.name}
                                     </h2>
-                                    <p className="text-lg text-cyan-600 font-semibold mt-2">{product.price}</p>
-                                    <ul className="text-gray-700 text-left text-sm sm:text-base list-disc list-inside space-y-2 mt-4">
+
+                                    {/* Price Section */}
+                                    <div className="flex items-center justify-center gap-3 text-lg">
+                                          <span className="line-through text-red-400">{product.oldPrice}</span>
+                                          <span className="text-green-600 font-bold">{product.newPrice}</span>
+                                    </div>
+
+                                    {/* Warranty */}
+                                    {product.warranty !== "0" && (
+                                          <p className="text-sm text-gray-500">Warranty: {product.warranty}</p>
+                                    )}
+
+                                    {/* Features */}
+                                    <ul className="text-gray-700 text-left text-sm sm:text-base list-disc list-inside space-y-2 max-w-md mx-auto">
                                           {product.features?.map((feat, i) => (
                                                 <li key={i}>{feat}</li>
                                           ))}
                                     </ul>
                               </div>
+
 
                               {/* Right: Booking Form */}
                               <div className="p-6 rounded-xl shadow-md bg-white">
