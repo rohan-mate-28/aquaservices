@@ -4,6 +4,19 @@ import { useNavigate } from 'react-router-dom';
 
 const products = [
   {
+    id: "aqua-natural",
+    name: "AQUA NATURAL",
+    image: "/aquaservices/AquaAth.jpeg",
+    features: [
+      "16 Litter Capacity",
+      "Unbreakable body",
+      "Alkaline water"
+    ],
+    oldPrice: "₹6,499",
+    newPrice: "₹5,499",
+    warranty: "0"
+  },
+  {
     id: "royal-plues",
     name: " ROYAL Plues ",
     image: "/aquaservices/royal.jpeg",
@@ -17,19 +30,6 @@ const products = [
     oldPrice: "9,599",
     newPrice: "₹8,399",
     warranty: "1 Year"
-  },
-  {
-    id: "aqua-natural",
-    name: "AQUA NATURAL",
-    image: "/aquaservices/AquaAth.jpeg",
-    features: [
-      "16 Litter Capacity",
-      "Unbreakable body",
-      "Alkaline water"
-    ],
-    oldPrice: "₹6,499",
-    newPrice: "₹5,499",
-    warranty: "0"
   },
   {
     id: "purosis",
@@ -61,6 +61,19 @@ const products = [
     newPrice: "21,999",
     warranty: "1 Year"
   },
+   {
+    id: "aqua-natural",
+    name: "AQUA NATURAL",
+    image: "/aquaservices/AquaAth.jpeg",
+    features: [
+      "16 Litter Capacity",
+      "Unbreakable body",
+      "Alkaline water"
+    ],
+    oldPrice: "₹6,499",
+    newPrice: "₹5,499",
+    warranty: "0"
+  },
   {
     id: "royal-plues",
     name: " ROYAL Plues ",
@@ -75,19 +88,6 @@ const products = [
     oldPrice: "9,599",
     newPrice: "₹8,399",
     warranty: "1 Year"
-  },
-  {
-    id: "aqua-natural",
-    name: "AQUA NATURAL",
-    image: "/aquaservices/AquaAth.jpeg",
-    features: [
-      "16 Litter Capacity",
-      "Unbreakable body",
-      "Alkaline water"
-    ],
-    oldPrice: "₹6,499",
-    newPrice: "₹5,499",
-    warranty: "0"
   },
   {
     id: "purosis",
@@ -118,6 +118,18 @@ const products = [
     oldPrice: "₹23,999",
     newPrice: "21,999",
     warranty: "1 Year"
+  },{
+    id: "aqua-natural",
+    name: "AQUA NATURAL",
+    image: "/aquaservices/AquaAth.jpeg",
+    features: [
+      "16 Litter Capacity",
+      "Unbreakable body",
+      "Alkaline water"
+    ],
+    oldPrice: "₹6,499",
+    newPrice: "₹5,499",
+    warranty: "0"
   },
   {
     id: "royal-plues",
@@ -133,19 +145,6 @@ const products = [
     oldPrice: "9,599",
     newPrice: "₹8,399",
     warranty: "1 Year"
-  },
-  {
-    id: "aqua-natural",
-    name: "AQUA NATURAL",
-    image: "/aquaservices/AquaAth.jpeg",
-    features: [
-      "16 Litter Capacity",
-      "Unbreakable body",
-      "Alkaline water"
-    ],
-    oldPrice: "₹6,499",
-    newPrice: "₹5,499",
-    warranty: "0"
   },
   {
     id: "purosis",
