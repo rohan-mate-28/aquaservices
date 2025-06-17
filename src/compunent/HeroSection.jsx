@@ -6,7 +6,7 @@ const products = [
   {
     id: "aqua-natural",
     name: "AQUA NATURAL",
-    image: "/aquaservices/AquaAth.jpeg",
+    image: "/images/AquaAth.jpeg",
     features: [
       "16 Litter Capacity",
       "Unbreakable body",
@@ -19,7 +19,7 @@ const products = [
   {
     id: "royal-plues",
     name: " ROYAL Plues ",
-    image: "/aquaservices/royal.jpeg",
+    image: "/images/royal.jpeg",
     features: [
       "RO + UV + TDS Controller+ Mineral Filter",
       "16 Litter Capacity",
@@ -34,7 +34,7 @@ const products = [
   {
     id: "purosis",
     name: "PUROSIS",
-    image: "/aquaservices/purosis.jpeg",
+    image: "/images/purosis.jpeg",
     features: [
       "RO + UV + TDS Controller + Mineral Filter + Alkaline",
       "Wall-mountable design",
@@ -49,7 +49,7 @@ const products = [
   {
     id: "under-sink",
     name: "UNDER SINK WATER PURIFIER",
-    image: "/aquaservices/Under-sink.jpeg",
+    image: "/images/Under-sink.jpeg",
     features: [
       "RO + UV + TDS Controller + Mineral Filter + Alkaline",
       "Wall-mountable design",
@@ -64,7 +64,7 @@ const products = [
    {
     id: "aqua-natural",
     name: "AQUA NATURAL",
-    image: "/aquaservices/AquaAth.jpeg",
+    image: "/images/AquaAth.jpeg",
     features: [
       "16 Litter Capacity",
       "Unbreakable body",
@@ -77,7 +77,7 @@ const products = [
   {
     id: "royal-plues",
     name: " ROYAL Plues ",
-    image: "/aquaservices/royal.jpeg",
+    image: "/images/royal.jpeg",
     features: [
       "RO + UV + TDS Controller+ Mineral Filter",
       "16 Litter Capacity",
@@ -92,7 +92,7 @@ const products = [
   {
     id: "purosis",
     name: "PUROSIS",
-    image: "/aquaservices/purosis.jpeg",
+    image: "/images/purosis.jpeg",
     features: [
       "RO + UV + TDS Controller + Mineral Filter + Alkaline",
       "Wall-mountable design",
@@ -107,7 +107,7 @@ const products = [
   {
     id: "under-sink",
     name: "UNDER SINK WATER PURIFIER",
-    image: "/aquaservices/Under-sink.jpeg",
+    image: "/images/Under-sink.jpeg",
     features: [
       "RO + UV + TDS Controller + Mineral Filter + Alkaline",
       "Wall-mountable design",
@@ -121,7 +121,7 @@ const products = [
   },{
     id: "aqua-natural",
     name: "AQUA NATURAL",
-    image: "/aquaservices/AquaAth.jpeg",
+    image: "/images/AquaAth.jpeg",
     features: [
       "16 Litter Capacity",
       "Unbreakable body",
@@ -134,7 +134,7 @@ const products = [
   {
     id: "royal-plues",
     name: " ROYAL Plues ",
-    image: "/aquaservices/royal.jpeg",
+    image: "/images/royal.jpeg",
     features: [
       "RO + UV + TDS Controller+ Mineral Filter",
       "16 Litter Capacity",
@@ -149,7 +149,7 @@ const products = [
   {
     id: "purosis",
     name: "PUROSIS",
-    image: "/aquaservices/purosis.jpeg",
+    image: "/images/purosis.jpeg",
     features: [
       "RO + UV + TDS Controller + Mineral Filter + Alkaline",
       "Wall-mountable design",
@@ -164,7 +164,7 @@ const products = [
   {
     id: "under-sink",
     name: "UNDER SINK WATER PURIFIER",
-    image: "/aquaservices/Under-sink.jpeg",
+    image: "/images/Under-sink.jpeg",
     features: [
       "RO + UV + TDS Controller + Mineral Filter + Alkaline",
       "Wall-mountable design",
