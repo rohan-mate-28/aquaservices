@@ -5,19 +5,19 @@ const testimonials = [
     name: 'Ravi Deshmukh',
     feedback: 'Excellent service! They installed our AquaGuard in no time. Very professional and courteous staff.',
     location: 'Pune, Maharashtra',
-    avatar: '/aquaservices/ravu.webp',
+    avatar: '/images/ravu.webp',
   },
   {
     name: 'Neha Kulkarni',
     feedback: 'Affordable pricing and quick response. I’m very happy with their maintenance service.',
     location: 'Kothrud, Pune',
-    avatar: '/aquaservices/neha.jpeg',
+    avatar: '/images/neha.jpeg',
   },
   {
     name: 'Vikram Patil',
     feedback: 'The best RO service I’ve found in Pune! Highly recommended.',
     location: 'Baner, Pune',
-    avatar: '/aquaservices/vikram.webp',
+    avatar: '/images/vikram.webp',
   },
 ];
 
