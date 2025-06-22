@@ -44,6 +44,21 @@ const products = [
     ],
     oldPrice: "₹13,999",
     newPrice: "11,999",
+    warranty: "1 Year"
+  },
+  {
+    id: "Aqua_Fresh",
+    name: "Aqua Fresh",
+    image: "/images/Aqua Fresh.jpg",
+    features: [
+      "RO + UV + TDS Controller + Mineral Filter + Alkaline",
+      "Wall-mountable design",
+      "Energy-efficient",
+      "12 Litre Storage",
+      "Suitable for borewell & tanker"
+    ],
+    oldPrice: "₹13,599",
+    newPrice: "11,999",
     warranty: "2 Year"
   },
   {
@@ -59,7 +74,7 @@ const products = [
     ],
     oldPrice: "₹23,999",
     newPrice: "21,999",
-    warranty: "1 Year"
+    warranty: "2 Year"
   },
    {
     id: "aqua-natural",
@@ -102,6 +117,21 @@ const products = [
     ],
     oldPrice: "₹13,999",
     newPrice: "11,999",
+    warranty: "1 Year"
+  },
+    {
+    id: "Aqua_Fresh",
+    name: "Aqua Fresh",
+    image: "/images/Aqua Fresh.jpg",
+    features: [
+      "RO + UV + TDS Controller + Mineral Filter + Alkaline",
+      "Wall-mountable design",
+      "Energy-efficient",
+      "12 Litre Storage",
+      "Suitable for borewell & tanker"
+    ],
+    oldPrice: "₹13,599",
+    newPrice: "11,999",
     warranty: "2 Year"
   },
   {
@@ -117,7 +147,7 @@ const products = [
     ],
     oldPrice: "₹23,999",
     newPrice: "21,999",
-    warranty: "1 Year"
+    warranty: "2 Year"
   },{
     id: "aqua-natural",
     name: "AQUA NATURAL",
@@ -159,6 +189,21 @@ const products = [
     ],
     oldPrice: "₹13,999",
     newPrice: "11,999",
+    warranty: "1 Year"
+  },
+    {
+    id: "Aqua_Fresh",
+    name: "Aqua Fresh",
+    image: "/images/Aqua Fresh.jpg",
+    features: [
+      "RO + UV + TDS Controller + Mineral Filter + Alkaline",
+      "Wall-mountable design",
+      "Energy-efficient",
+      "12 Litre Storage",
+      "Suitable for borewell & tanker"
+    ],
+    oldPrice: "₹13,599",
+    newPrice: "11,999",
     warranty: "2 Year"
   },
   {
@@ -174,7 +219,7 @@ const products = [
     ],
     oldPrice: "₹23,999",
     newPrice: "21,999",
-    warranty: "1 Year"
+    warranty: "2 Year"
   }
    
 ];
