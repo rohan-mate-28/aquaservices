@@ -24,7 +24,7 @@ const Footer = () => {
   <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
     {/* Left Content */}
     <div>
-      <h2 className="text-xl font-bold mb-2">AquaCare Services</h2>
+      <h2 className="text-xl font-bold mb-2">Morya Aqua Services</h2>
       <p className="text-sm text-cyan-100">
         Clean Water. Trusted Service. Pune's Preferred Aqua Experts.
       </p>
@@ -54,7 +54,7 @@ const Footer = () => {
 </div>
 
       <p className="text-xs text-cyan-200">
-        © 2025 AquaCare Services. All rights reserved.
+        © 2025 Morya Aqua Services. All rights reserved.
       </p>
     </div>
   </div>

@@ -8,7 +8,7 @@ const products = [
     name: "AQUA NATURAL",
     image: "/images/AquaAth.jpeg",
     features: [
-      "16 Litter Capacity",
+      "12 Litter Capacity",
       "Unbreakable body",
       "Alkaline water"
     ],
@@ -22,7 +22,7 @@ const products = [
     image: "/images/royal.jpeg",
     features: [
       "RO + UV + TDS Controller+ Mineral Filter",
-      "16 Litter Capacity",
+      "12 Litter Capacity",
       "Wall-mountable design",
       "Energy-efficient",
       "Suitable for borewell & tanker"
@@ -39,7 +39,7 @@ const products = [
       "RO + UV + TDS Controller + Mineral Filter + Alkaline",
       "Wall-mountable design",
       "Energy-efficient",
-      "16 Litre Storage",
+      "12 Litre Storage",
       "Suitable for borewell & tanker"
     ],
     oldPrice: "₹13,999",
@@ -81,7 +81,7 @@ const products = [
     name: "AQUA NATURAL",
     image: "/images/AquaAth.jpeg",
     features: [
-      "16 Litter Capacity",
+      "12 Litter Capacity",
       "Unbreakable body",
       "Alkaline water"
     ],
@@ -95,7 +95,7 @@ const products = [
     image: "/images/royal.jpeg",
     features: [
       "RO + UV + TDS Controller+ Mineral Filter",
-      "16 Litter Capacity",
+      "12 Litter Capacity",
       "Wall-mountable design",
       "Energy-efficient",
       "Suitable for borewell & tanker"
@@ -112,7 +112,7 @@ const products = [
       "RO + UV + TDS Controller + Mineral Filter + Alkaline",
       "Wall-mountable design",
       "Energy-efficient",
-      "16 Litre Storage",
+      "12 Litre Storage",
       "Suitable for borewell & tanker"
     ],
     oldPrice: "₹13,999",
@@ -153,7 +153,7 @@ const products = [
     name: "AQUA NATURAL",
     image: "/images/AquaAth.jpeg",
     features: [
-      "16 Litter Capacity",
+      "12 Litter Capacity",
       "Unbreakable body",
       "Alkaline water"
     ],
@@ -167,7 +167,7 @@ const products = [
     image: "/images/royal.jpeg",
     features: [
       "RO + UV + TDS Controller+ Mineral Filter",
-      "16 Litter Capacity",
+      "12 Litter Capacity",
       "Wall-mountable design",
       "Energy-efficient",
       "Suitable for borewell & tanker"
@@ -184,7 +184,7 @@ const products = [
       "RO + UV + TDS Controller + Mineral Filter + Alkaline",
       "Wall-mountable design",
       "Energy-efficient",
-      "16 Litre Storage",
+      "12 Litre Storage",
       "Suitable for borewell & tanker"
     ],
     oldPrice: "₹13,999",
