@@ -43,7 +43,7 @@ const products = [
       "Suitable for borewell & tanker"
     ],
     oldPrice: "₹13,999",
-    newPrice: "11,999",
+    newPrice: "₹9,999",
     warranty: "1 Year"
   },
   {
@@ -116,7 +116,7 @@ const products = [
       "Suitable for borewell & tanker"
     ],
     oldPrice: "₹13,999",
-    newPrice: "11,999",
+    newPrice: "9,999",
     warranty: "1 Year"
   },
     {
@@ -188,7 +188,7 @@ const products = [
       "Suitable for borewell & tanker"
     ],
     oldPrice: "₹13,999",
-    newPrice: "11,999",
+    newPrice: "9,999",
     warranty: "1 Year"
   },
     {
